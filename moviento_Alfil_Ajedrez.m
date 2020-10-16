@@ -1,28 +1,31 @@
-%Matriz a evaluar
-M = zeros(8);
-M = string(M);
+% TABLERO DE AJEDREZ - MOVIENTO DEL ALFIL
+%Recreacion de los posibilidades de los movimientos del alfil
+% en un tablero de ajedrez
+
+%Matriz 
+m = zeros(8); %creacion de un matriz vacia
+m = string(M); %conversion de la matriz a string 
 	
 	% Buble que me permite llenar los B y N
-	for i=1:size(M,1)%uno representa las filas
-		for j=1:size(M,2)%dos representa las columnas
-			% si el resultado es 0 ingreso B y N en ese orden
-			if (rem(i,2) == 0) % al sacar el residuo de la division ente i%2 me da 0, entro al if
-				% me permite intercalar los B y N
-				if (rem(j,2) == 0) % al sacar el residuo de la division ente j%2 me da 0, entro al if
-					M(i,j) = "B";
-				else
-					M(i,j) = "N";
-				end
-			else % caso contrario ingreso N y B en ese orden
-				% me permite intercalar los N y B
-				if (rem(j,2) == 0) % al sacar el residuo de la division ente j%2 me da 0, entro al if
-					M(i,j) = "N";
-				else
-					M(i,j) = "B";
-				end
-			end
-		end
-	end
+for i=1:size(m,1) %recorrido de filas
+    for j=1:size(m,2) %recorrido de columnas
+        
+        if (mod(i,2) == 0)%fila par
+            if (mod(j,2)) == 0 %columnas par
+                m(i,j) = 'B'; %agrego B a la matriz
+            else %columna impar
+                m(i,j) = 'N'; %agrego N a la matriz
+            end
+        else %fila impar
+            if (mod(j,2)) == 0 %columnas par
+                m(i,j) = 'N'; %agrego N a la matriz
+            else%columna impar
+                m(i,j) = 'B'; %agrego B a la matriz
+            end
+        end
+
+    end
+end
 	
 	M % Muestro la matriz 
 	
