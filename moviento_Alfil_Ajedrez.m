@@ -1,8 +1,8 @@
 % TABLERO DE AJEDREZ - MOVIENTO DEL ALFIL
 %Recreacion de los posibilidades de los movimientos del alfil
-% en un tablero de ajedrez
+% en un tablero de ajedrez, 
 
-%Matriz 
+%Matriz que representa mi tablero
 m = zeros(8); %creacion de un matriz vacia
 m = string(M); %conversion de la matriz a string 
 	
