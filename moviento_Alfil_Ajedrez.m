@@ -1,4 +1,4 @@
-% TABLERO DE AJEDREZ - MOVIENTO DEL ALFIL
+% TABLERO DE AJEDREZ - MOVIENTO DEL ALFIL 2.0
 %Recreacion de los posibilidades de los movimientos del alfil
 % en un tablero de ajedrez, 
 
