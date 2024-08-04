@@ -29,6 +29,8 @@ end
 
 m %impresion de matriz
 
+
+
 %posibles movientos de la alfil
 en = ['Coloque el ALFIL en una posicion dentro del tablero'];
 disp(en) %impresion
